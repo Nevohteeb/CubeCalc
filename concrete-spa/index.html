@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Calculator Container -->
+
+        <div class="calculator col-12">
+            <!-- Input Form -->
+
+            <div class="icon">
+                <i class="fa-solid fa-calculator"></i>
+            </div>
+
+            <h1>Cubic Metre/Yard Calculator</h1>
+
+            <p class="measure-text">Please enter all measurements in meters</p>
+
+            <form>
+                <!-- Length Input -->
+                <div class="mb-3 d-flex calc-input">
+                  <label for="length" class="form-label">Length</label>
+                  <input type="text" class="form-control text-muted" id="length" placeholder="10m..." required> 
+                </div>
+
+                <!-- Width Input -->
+                <div class="mb-3 d-flex calc-input">
+                    <label for="width" class="form-label">Width</label>
+                    <input type="text" class="form-control text-muted" id="width" placeholder="2m.." required> 
+                </div>
+
+                <!-- Depth Input -->
+                <div class="mb-3 d-flex calc-input">
+                    <p class="form-label">Depth</p>
+                    <select class="form-select" id="depthValue" required>
+                        
+                        <option selected value="0" class="text-muted">Select</option>
+
+                        <!-- 100 - 200mm -->
+                        <option value="0.1">100mm</option>
+                        <option value="0.125">125mm</option>
+                        <option value="0.15">150mm</option>
+                        <option value="0.175">175mm</option>
+
+                        <!-- 200mm - 300mm -->
+                        <option value="0.2">200mm</option>
+                        <option value="0.225">225mm</option>
+                        <option value="0.25">250mm</option>
+                        <option value="0.275">275mm</option>
+
+                        <!-- 300mm - 400mm -->
+                        <option value="0.3">300mm</option>
+                        <option value="0.325">325mm</option>
+                        <option value="0.35">350mm</option>
+                        <option value="0.375">375mm</option>
+
+                        <!-- 400mm - 500mm -->
+                        <option value="0.4">400mm</option>
+                        <option value="0.425">425mm</option>
+                        <option value="0.45">450mm</option>
+                        <option value="0.475">475mm</option>
+
+                        <!-- 500mm -->
+                        <option value="0.5">500mm</option>
+                      </select>
+
+                </div>
+
+                <button class="btn btn-primary" id="calcBtn">Calculate Total</button>
+
+            </form>
+            
+            
+
+            <div id="res">
+               
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="text-center" id="copyrightText">© 2023 <a href="https://www.w3schools.com" target="_blank">Moretti Industries</a><br>Developed by Nevohteeb Designs</p>
+    
+    
+
+    
+
+    <!-- Bootstraps JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/c252db7e5f.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
